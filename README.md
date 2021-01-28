@@ -1,6 +1,6 @@
 # Image Segmentation
 ## Results
-### 1.Image segmentation by K-Means
+### 1.Image segmentation by K-Means Clustering Program
 ![Burma](output/burma.jpg)
 ![Burma](output/burma-segmented.jpg)
 
