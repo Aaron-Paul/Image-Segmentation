@@ -5,7 +5,7 @@ The program reads in an image, segments it using K-Means clustering and outputs 
 It is worth playing with the number of iterations, low numbers will run quicker.
 The result is an over-segmented image. With the correct parameters, it can be used to partition an image for further processing.
 
-command line arguments:
+Command line Arguments:
 python imageSegmentation.py K inputImageFilename outputImageFilename
 where K is greater than 2
 '''
