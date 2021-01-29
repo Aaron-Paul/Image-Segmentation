@@ -10,7 +10,7 @@
 ![tunnel](output/tunnel.png)
 ![tunnel](output/tunnel-segmented.png)
 
-### 2.Application Program to enhance Images
+### 2.Application Program to Enhance Images
 
 ![Results](output/Application_Result_1.png) <br>
 ![Results](output/Application_Result_2.png) <br>
