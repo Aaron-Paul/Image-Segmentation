@@ -10,8 +10,10 @@ The goal of segmentation is to simplify and/or change the representation of an i
 
 ## Steps to run the included code:
 1.K_means Image Segmentation:
-- Command line Arguments:python imageSegmentation.py K inputImageFilename outputImageFilename(where K is greater than 2.)
+- Command line Arguments:python imageSegmentation.py K inputImageFilename outputImageFilename  (where K is greater than 2.)
+<br>
 2.Application Program:
+
 - Install python and run the .py file with the images to be segemented in the same working directory as of the python file. The output would be stored at the same PWD.
 - you could also install jupyter notebook and take it to the PWD of.ipynb with the images already there following simply with the code execution.
 
