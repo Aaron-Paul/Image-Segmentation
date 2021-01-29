@@ -12,6 +12,6 @@
 
 ### 2.Application Program to enhance Images
 
-![Results](output/Application_Result_1.png)
-![Results](output/Application_Result_2.png)
+![Results](output/Application_Result_1.png) <br>
+![Results](output/Application_Result_2.png) <br>
 ![Results](output/Application_Result_3.png)
