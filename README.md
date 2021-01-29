@@ -10,19 +10,17 @@ The goal of segmentation is to simplify and/or change the representation of an i
 
 ## Steps to run the included code:
 1.K_means Image Segmentation:
-- Command line Arguments:
- python imageSegmentation.py K inputImageFilename outputImageFilename
- where K is greater than 2.<br>
+- Command line Arguments:python imageSegmentation.py K inputImageFilename outputImageFilename(where K is greater than 2.)
 2.Application Program:
 - Install python and run the .py file with the images to be segemented in the same working directory as of the python file. The output would be stored at the same PWD.
 - you could also install jupyter notebook and take it to the PWD of.ipynb with the images already there following simply with the code execution.
 
 ## Algorithm
-The K-means algorithm is an iterative technique that is used to partition an image into K clusters.The basic algorithm is
-1.Pick K cluster centers, either randomly or based on some heuristic method.
-2.Assign each pixel in the image to the cluster that minimizes the distance between the pixel and the cluster center
-3.Re-compute the cluster centers by averaging all of the pixels in the cluster
-4.Repeat steps 2 and 3 until convergence is attained (i.e. no pixels change clusters)
+The K-means algorithm is an iterative technique that is used to partition an image into K clusters.The basic algorithm is<br>
+1.Pick K cluster centers, either randomly or based on some heuristic method.<br>
+2.Assign each pixel in the image to the cluster that minimizes the distance between the pixel and the cluster center<br>
+3.Re-compute the cluster centers by averaging all of the pixels in the cluster<br>
+4.Repeat steps 2 and 3 until convergence is attained (i.e. no pixels change clusters)<br>
 In this case, distance is the squared or absolute difference between a pixel and a cluster center. The difference is typically based on pixel color, intensity, texture, and location, or a weighted combination of these factors.
 K can be selected manually, randomly, or by a heuristic. This algorithm is guaranteed to converge, but it may not return the optimal solution. The quality of the solution depends on the initial set of clusters and the value of K.
 
