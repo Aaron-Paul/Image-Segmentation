@@ -4,15 +4,15 @@ Image Segmentation is the process by which a digital image is partitioned into v
 The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze.Image segmentation is typically used to locate objects and boundaries in images. 
 
 ## Folder Structure and their Uses:
-1.K-Means Clustering :This folder contains a python file that will convert the given images into segmented images with the help of K-Means Clustering Algorithm.The Images used to test this program can be found in the Output Folder.
-2.Application-Image Enhancement and Contrast :This folder contains a python program as well as a jupiter notebook file that will enchance a image by segmentation and also increasing the contrast with the help of the algorithm implemented in the above folder
+1.K-Means Clustering :This folder contains a python file that will convert the given images into segmented images with the help of K-Means Clustering Algorithm.The Images used to test this program can be found in the Output Folder.<br>
+2.Application-Image Enhancement and Contrast :This folder contains a python program as well as a jupiter notebook file that will enchance a image by segmentation and also increasing the contrast with the help of the algorithm implemented in the above folder<br>
 3.Output:this file contains the images used for testing the above programs and the results obtained by these programs
 
 ## Steps to run the included code:
 1.K_means Image Segmentation:
 - Command line Arguments:
  python imageSegmentation.py K inputImageFilename outputImageFilename
- where K is greater than 2
+ where K is greater than 2.<br>
 2.Application Program:
 - Install python and run the .py file with the images to be segemented in the same working directory as of the python file. The output would be stored at the same PWD.
 - you could also install jupyter notebook and take it to the PWD of.ipynb with the images already there following simply with the code execution.
