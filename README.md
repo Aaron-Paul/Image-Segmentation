@@ -46,7 +46,9 @@ K can be selected manually, randomly, or by a heuristic. This algorithm is guara
 ![Results](output/Application_Result_2.png) <br>
 ![Results](output/Application_Result_3.png)
 
-
 ### 3.Lane Detection Program 
-
 ![Lane](output/results.png)
+
+### 4.Satellite Image Segmentation Program 
+![RoadDetection](output/Program_Output.png)
+
