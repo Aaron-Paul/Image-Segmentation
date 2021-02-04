@@ -27,7 +27,6 @@ for i in range(0,3):
     sortedLabels[i] = sorted([n for n in range(numClusters[i])],
         key=lambda x: -np.sum(clustering[i] == x))
 
-
 kmeansImage=[0,0,0]
 concatImage=[[],[],[]]
 for j in range(0,3):
@@ -38,9 +37,7 @@ for j in range(0,3):
 
 
 print(plt.imshow(concatImage[0]))
-
 print(plt.imshow(concatImage[1]))
-
 print(plt.imshow(concatImage[2]))
 
 for i in range(0,3):
