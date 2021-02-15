@@ -6,7 +6,8 @@ The goal of segmentation is to simplify and/or change the representation of an i
 ## Folder Structure and their Uses:
 1.Generic Object Segmentation:This folder contains a python file that will convert the given images into segmented images with the help of K-Means Clustering Algorithm.The Images used to test this program can be found in the Output Folder.<br>
 2.Medical Image Enhancement :This folder contains a python program as well as a jupiter notebook file that will enchance a image by segmentation and also increasing the contrast with the help of the algorithm implemented in the above folder<br>
-3.Output:this file contains the images used for testing the above programs and the results obtained by these programs
+3.Lane Detection:Lane detection plays a key role in the vision-based driver assistance system and is used for vehicle navigation, lateral control, collision prevention, or lane departure warning system. We present an adaptive method for detecting lane marking based on the intensity of road images in night scene which is the cause of numerous accidents.
+4.Output:this file contains the images used for testing the above programs and the results obtained by these programs
 
 ## Group Members and Their contribution:
 - Aaron:Generic Object Segmentation and Medical Image Segmentation
@@ -29,11 +30,7 @@ The K-means algorithm is an iterative technique that is used to partition an ima
 4.Repeat steps 2 and 3 until convergence is attained (i.e. no pixels change clusters)<br>
 In this case, distance is the squared or absolute difference between a pixel and a cluster center. The difference is typically based on pixel color, intensity, texture, and location, or a weighted combination of these factors.
 K can be selected manually, randomly, or by a heuristic. This algorithm is guaranteed to converge, but it may not return the optimal solution. The quality of the solution depends on the initial set of clusters and the value of K.
-- Lane Segmentation Program
-Lane detection plays a key role in the vision-based driver assistance system and is
-used for vehicle navigation, lateral control, collision prevention, or lane departure
-warning system. We present an adaptive method for detecting lane marking based on
-the intensity of road images in night scene which is the cause of numerous accidents.
+- Lane Segmentation Program:
 First, a region of interest (ROI) image is extracted from the original image and
 converted to its grayscale image. After that, we segment out regions likely to be lane
 using a novel idea based on lane width. Finally, based on the structural and
