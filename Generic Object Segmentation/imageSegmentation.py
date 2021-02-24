@@ -16,6 +16,7 @@ from PIL import Image
 from sklearn import preprocessing
 from sklearn.metrics.pairwise import euclidean_distances
 
+#Number of iterations
 iterations = 5
 
 #Parse command-line arguments
