@@ -1,12 +1,3 @@
-"""
-Filename: get_data_generators.py
-
-Function: Builds and returns data generators.
-
-Author: Jerin Paul (https://github.com/Paulymorphous)
-Website: https://www.livetheaiexperience.com/
-"""
-
 from keras.preprocessing.image import ImageDataGenerator
 
 def GetDataGenerators(augmentation_parameters, train_images_path=None, train_targets_path=None, test_images_path=None, test_targets_path=None, batch_size = 64, seed=42):
