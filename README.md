@@ -19,8 +19,11 @@ The goal of segmentation is to simplify and/or change the representation of an i
   - Command line Arguments:python imageSegmentation.py K inputImageFilename outputImageFilename  (where K is greater than 2.)
 - Medical Image Enhancement:
   - Install python and run the .py file with the images to be segemented in the same working directory as of the python file. The output would be stored at the same PWD.
-  - you could also install jupyter notebook and take it to the PWD of.ipynb with the images already there following simply with the code execution.
-
+  - You could also install jupyter notebook and take it to the PWD of.ipynb with the images already there and simply follow through  with the code execution.
+- Lane Segmentation Program:
+  - Set the path of the video file of road to be segmented in the main function of the program and execute the program.
+- Road Segmentation using Sattelite Images
+  - Install jupyter notebook and take it to the PWD of.ipynb with the images already there and simply follow through  with the code execution.You could even aquire our own sattelite images with the aquire_data.py file and run the program after changing the file paths in the program files.
 ## Algorithm
 - Generic Object Segmentation & Medical Image Enhancement:
 The K-means algorithm is an iterative technique that is used to partition an image into K clusters.The basic algorithm is<br>
