@@ -1,12 +1,3 @@
-"""
-Filename: build_dataset.py
-
-Function: Crops the images into small 256x256 images and divides the dataset into training and testing set.
-
-Author: Jerin Paul (https://github.com/Paulymorphous)
-Website: https://www.livetheaiexperience.com/
-"""
-
 import numpy as np
 import cv2
 from tqdm import tqdm
