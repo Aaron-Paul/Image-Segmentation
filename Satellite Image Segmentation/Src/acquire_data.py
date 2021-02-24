@@ -1,12 +1,3 @@
-"""
-Filename: acquire_data.py
-
-Function:  Downloads the Massachusetts Roads Dataset or the Massachusetts Buildings Dataset. By changing "link_file" to point at a custom list of links, you can download any other dataset too.
-
-Author: Jerin Paul (https://github.com/Paulymorphous)
-Website: https://www.livetheaiexperience.com/
-"""
-
 import urllib.request
 import os
 from tqdm import tqdm
