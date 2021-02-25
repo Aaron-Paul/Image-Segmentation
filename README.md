@@ -59,8 +59,8 @@ previous frame with the current one to avoid any miscalculation.
 ![tunnel](output/tunnel.png)
 ![tunnel](output/tunnel-segmented.png)
 
-![face](output/myface.jpeg)
-![face](output/output.jpeg)
+![face](output/myface.jpeg){:height="400px" width="300px"}
+![face](output/output.jpeg){:height="400px" width="300px"}
 
 ### 2.Medical Image Enhancement Program:
 
