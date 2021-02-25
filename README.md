@@ -59,6 +59,9 @@ previous frame with the current one to avoid any miscalculation.
 ![tunnel](output/tunnel.png)
 ![tunnel](output/tunnel-segmented.png)
 
+![face](output/myface.jpeg)
+![face](output/output.jpeg)
+
 ### 2.Medical Image Enhancement Program:
 
 ![Results](output/Application_Result_1.png) <br>
