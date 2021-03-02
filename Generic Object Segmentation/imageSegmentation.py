@@ -108,8 +108,6 @@ image = Image.new("RGB", (imageW, imageH))
 
 for y in range(imageH):
 	for x in range(imageW):
-	 	image.putpixel((x, y), (int(dataVector[y * imageW + x][0]), 
-	 							int(dataVector[y * imageW + x][1]),
-	 							int(dataVector[y * imageW + x][2])))
+	 	image.putpixel((x, y), (int(dataVector[y * imageW + x][0]), int(dataVector[y * imageW + x][1]),int(dataVector[y * imageW + x][2])))
 #Result:saving the segmented image
 image.save(outputName)
