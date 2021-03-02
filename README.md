@@ -26,7 +26,7 @@ The goal of segmentation is to simplify and/or change the representation of an i
 - Road Segmentation using Sattelite Images
   - Install jupyter notebook and take it to the PWD of.ipynb with the images already there and simply follow through  with the code execution.You could even aquire our own sattelite images with the aquire_data.py file and run the program after changing the file paths in the program files.
 ## Algorithm
-- Generic Object Segmentation & Medical Image Enhancement:
+- Generic Object Segmentation:
 The K-means algorithm is an iterative technique that is used to partition an image into K clusters.The basic algorithm is<br>
 1.Pick K cluster centers, either randomly or based on some heuristic method.<br>
 2.Assign each pixel in the image to the cluster that minimizes the distance between the pixel and the cluster center<br>
@@ -34,6 +34,13 @@ The K-means algorithm is an iterative technique that is used to partition an ima
 4.Repeat steps 2 and 3 until convergence is attained (i.e. no pixels change clusters)<br>
 In this case, distance is the squared or absolute difference between a pixel and a cluster center. The difference is typically based on pixel color, intensity, texture, and location, or a weighted combination of these factors.
 K can be selected manually, randomly, or by a heuristic. This algorithm is guaranteed to converge, but it may not return the optimal solution. The quality of the solution depends on the initial set of clusters and the value of K.
+- Medical Image Enhancement:
+The steps Involved in K-NN algorithm:
+1.Choosing the number of Clusters<br>
+2.Selecting at random K points for centroid, in our case 40 was passed as the number of neighbors.<br>
+3.Assigning each Data point as we say each pixel value closest to the above centroid that further gives us clusters.<br>
+4.Now we compute and place the new centroid for each cluster.<br>
+5.On the last step we just do the reassignment of the new nearest centroid and if in any case any new reassignment took place we would reiterate the above process.<br>
 - Lane Segmentation Program:
 First, a region of interest (ROI) image is extracted from the original image and
 converted to its grayscale image. After that, we segment out regions likely to be lane
