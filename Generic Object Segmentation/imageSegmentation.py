@@ -2,8 +2,8 @@
 IMAGE SEGMENTATION USING K-MEANS (UNSUPERVISED LEARNING)
 The program reads in an image, segments it using K-Means clustering and outputs the segmented image.
 
-It is worth playing with the number of iterations, low numbers will run quicker.
-The result is an over-segmented image. With the correct parameters, it can be used to partition an image for further processing.
+It is worth playing with the number of iterations, low numbers will run quicker but may not segment the image properly but if K is high then
+the result is an over-segmented image. With the correct parameters, it can be used to partition an image for further processing.
 
 command line arguments:
 python imageSegmentation.py K inputImageFilename outputImageFilename
