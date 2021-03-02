@@ -35,7 +35,7 @@ The K-means algorithm is an iterative technique that is used to partition an ima
 In this case, distance is the squared or absolute difference between a pixel and a cluster center. The difference is typically based on pixel color, intensity, texture, and location, or a weighted combination of these factors.
 K can be selected manually, randomly, or by a heuristic. This algorithm is guaranteed to converge, but it may not return the optimal solution. The quality of the solution depends on the initial set of clusters and the value of K.
 - Medical Image Enhancement:
-The steps Involved in K-NN algorithm:
+The steps Involved in K-NN algorithm:<br>
 1.Choosing the number of Clusters<br>
 2.Selecting at random K points for centroid, in our case 40 was passed as the number of neighbors.<br>
 3.Assigning each Data point as we say each pixel value closest to the above centroid that further gives us clusters.<br>
