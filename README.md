@@ -19,8 +19,7 @@ The goal of segmentation is to simplify and/or change the representation of an i
 - Generic Object Segmentation:
   - Command line Arguments:python imageSegmentation.py K inputImageFilename outputImageFilename  (where K is greater than 2.)
 - Medical Image Enhancement:
-  - Install python and run the .py file with the images to be segemented in the same working directory as of the python file. The output would be stored at the same PWD.
-  - You could also install jupyter notebook and take it to the PWD of.ipynb with the images already there and simply follow through  with the code execution.
+  - Install Anaconda and run the jupyter notebook with the images to be segemented in the same working directory as of the notebook and simply follow through with the code execution.
 - Lane Segmentation Program:
   - Set the path of the video file of road to be segmented in the main function of the program and execute the program.
 - Road Segmentation using Sattelite Images
