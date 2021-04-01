@@ -5,7 +5,7 @@ The goal of segmentation is to simplify and/or change the representation of an i
 
 ## Folder Structure and their Uses:
 1.Generic Object Segmentation:This folder contains a python file that will convert the given images into segmented images with the help of K-Means Clustering Algorithm.The Images used to test this program can be found in the Output Folder.<br>
-2.Medical Image Enhancement :This folder contains a python program as well as a jupiter notebook file that will enchance a image by segmentation and also increasing the contrast with the help of the KNN algorithm <br>
+2.Medical Image Enhancement :This folder contains a python program as well as a jupyter notebook file that will enchance a image by segmentation and also increasing the contrast with the help of the KNN algorithm <br>
 3.Lane Detection:Lane detection plays a key role in the vision-based driver assistance system and is used for vehicle navigation, lateral control, collision prevention, or lane departure warning system. We present an adaptive method for detecting lane marking based on the intensity of road images in night scene which is the cause of numerous accidents.<br>
 4.Road Segmentation using Sattelite Images:The src folder contains the source code for the program.The data folder contain link to the images used for training the model and the model folder contains the final model program.The necessary requirement needed to run this program is given in the requirement.txt file <br>
 5.Output:this file contains the images used for testing the above programs and the results obtained by these programs
