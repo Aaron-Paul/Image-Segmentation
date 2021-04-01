@@ -48,12 +48,23 @@ orientation properties of a lane only those segments are kept which match with t
 required properties. Once lane segments are obtained, hough transform can be applied
 to estimate lane boundaries. Cognitive methods are then applied to combine results of
 previous frame with the current one to avoid any miscalculation.
+- Road Segmentation using Sattelite Images
+To solve the road segmentation problem, we used an Unet, it is a fully convolutional network, with 3 cross-connections. Adam optimiser with a learning rate of 0.00001 was used, along with dice loss (because of the unbalanced nature of the dataset.) The model trained for 61 epochs before earlstopper kicked in and killed the training process. A validation dice loss of 0.7548was achieved.
+Filename: acquire_data.py
+Function:  Downloads the Massachusetts Roads Dataset or the Massachusetts Buildings Dataset. 
+Filename: build_dataset.py
+Function: Crops the images into small 256x256 images and divides the dataset into training and testing set.Splits the dataset into train and test sets and stores then in an ImageDataAugmentation friendly format. 
+Filename: get_data_generators.py
+Function: Builds and returns data generators.
+Filename: loss_functions.py
+Function: To deal with the imbalanced data issue
+Filename: Road_Detection_GPU.ipynb (Jupiter Notebook)
+Function: Building the model and executing it to see the predicted output of road segmentation.
 
 ## Uses of Image Segmentation:
 - Improved Quality of MRI/Medical images for better detection of diseases and problems
 - Segmenting images can help to improve robot vision
 - Image segementation can also be applied to satellite images in order to get better object detection
-
 ## Results
 ### 1.Generic Object Segmentation Program:
 ![Burma](output/burma.jpg)
