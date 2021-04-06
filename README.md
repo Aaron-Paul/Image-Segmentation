@@ -41,13 +41,20 @@ The steps Involved in K-NN algorithm:<br>
 4.Now we compute and place the new centroid for each cluster.<br>
 5.On the last step we just do the reassignment of the new nearest centroid and if in any case any new reassignment took place we would reiterate the above process.<br>
 - Lane Segmentation Program:
-First, a region of interest (ROI) image is extracted from the original image and
-converted to its grayscale image. After that, we segment out regions likely to be lane
-using a novel idea based on lane width. Finally, based on the structural and
-orientation properties of a lane only those segments are kept which match with these
-required properties. Once lane segments are obtained, hough transform can be applied
-to estimate lane boundaries. Cognitive methods are then applied to combine results of
-previous frame with the current one to avoid any miscalculation.
+1) First we start by pre processing the image, which includes converting the input image frame (RGB) to gray scale for reducing the channels.we also remove Image noise for better and accurate edge detection. Then we smoothen the Image.
+
+ 2) Identification of edges: We use one of the edge detection techniques called the Canny Technique, which will help us identify the edges in the image.
+ 
+3)  Determining the region of Interest (ROI ) :  Before we start  detection, we need to decide the particular lane area in the image that we should work-on to write the program. For this we create a ROI function which returns the enclosed region of our field of view, in the case of a road, triangle region would be best fit. We do so by creating a polygon and applying it on a black mask.
+
+4) Isolation of lanes : Now, we will need to isolate the lanes in the masked portion of the image. We use binaries to isolate. We apply Bitwise AND between the existing image and the gradient image. Doing so will give us perfectly masked out lanes on the road.
+
+5) Hough Transform : Hough Transform will help us to detect the straight lines in the image and help identifying Lane lines. Hough space is the representation of the b,m axis in the Line equation y=mx+b. 
+
+6) Optimization : We see that the resulting image contains multiple lines having breakpoints in between certain lanes, We can fix this by taking average of their slope and the y intercept to form a single line that will trace a whole lane, thereby optimizing the preview.
+
+7) Applying the Algorithm to a video frame by frame :  We will use opencv’s VideoCapture function, which will allow us to process the video frame by frame by reading every frame and then applying the algorithm to that particular frame.
+
 - Road Segmentation using Sattelite Images
 To solve the road segmentation problem, we used an Unet, it is a fully convolutional network, with 3 cross-connections. Adam optimiser with a learning rate of 0.00001 was used, along with dice loss (because of the unbalanced nature of the dataset.) The model trained for 61 epochs before earlstopper kicked in and killed the training process. A validation dice loss of 0.7548 was achieved.<br>
 Filename: acquire_data.py<br>
