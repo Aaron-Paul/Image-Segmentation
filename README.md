@@ -86,7 +86,8 @@ Function: Building the model and executing it to see the predicted output of roa
 ![Results](output/Application_Result_3.png)
 
 ### 3.Lane Detection Program:
-![Lane](output/results.png)
+![Lane](output/org_test.png)
+![Lane](output/final_output.png)
 
 ### 4.Satellite Image Segmentation Program:
 ![RoadDetection](output/Program_Output.png)
