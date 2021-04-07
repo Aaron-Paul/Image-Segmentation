@@ -21,7 +21,7 @@ The goal of segmentation is to simplify and/or change the representation of an i
 - Medical Image Enhancement:
   - Install Anaconda and run the jupyter notebook with the images to be segemented in the same working directory as of the notebook and simply follow through with the code execution.
 - Lane Segmentation Program:
-  - Set the path of the video file of road to be segmented in the main function of the program and execute the program.
+  - Set the path of the video file of road to be segmented in the main function of the program or simply keep the file in the same folder as the program and execute the program.
 - Road Segmentation using Sattelite Images
   - Install jupyter notebook and take it to the PWD of.ipynb with the images already there and simply follow through  with the code execution.You could even aquire our own sattelite images with the aquire_data.py file and run the program after changing the file paths in the program files.
 ## Algorithm
