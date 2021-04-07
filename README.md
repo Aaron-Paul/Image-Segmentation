@@ -33,13 +33,12 @@ The K-means algorithm is an iterative technique that is used to partition an ima
 4.Repeat steps 2 and 3 until convergence is attained (i.e. no pixels change clusters)<br>
 In this case, distance is the squared or absolute difference between a pixel and a cluster center. The difference is typically based on pixel color, intensity, texture, and location, or a weighted combination of these factors.
 K can be selected manually, randomly, or by a heuristic. This algorithm is guaranteed to converge, but it may not return the optimal solution. The quality of the solution depends on the initial set of clusters and the value of K.
-- Medical Image Enhancement:
-The steps Involved in K-NN algorithm:<br>
-1.Choosing the number of Clusters<br>
-2.Selecting at random K points for centroid, in our case 40 was passed as the number of neighbors.<br>
+- Medical Image Enhancement:Main Algorithm working:<br>
+1.Choosing the number of Clusters(n)<br>
+2.kmeans centers points for centroid.<br>
 3.Assigning each Data point as we say each pixel value closest to the above centroid that further gives us clusters.<br>
-4.Now we compute and place the new centroid for each cluster.<br>
-5.On the last step we just do the reassignment of the new nearest centroid and if in any case any new reassignment took place we would reiterate the above process.<br>
+4.in our case 41 was passed as the number of neighbors.<br>
+5.On the last step we just do the concatination of original and segmented image.<br>
 - Lane Segmentation Program:
 1.First we start by pre processing the image, which includes converting the input image frame (RGB) to gray scale for reducing the channels.we also remove Image noise for better and accurate edge detection. Then we smoothen the Image.<br>
 2.Identification of edges: We use one of the edge detection techniques called the Canny Technique, which will help us identify the edges in the image.<br>
